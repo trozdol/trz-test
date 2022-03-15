@@ -19,13 +19,10 @@ ${terminalBorder('.')}
 
 console.log(terminalBorder('='));
 console.log('CLI');
-console.log(terminalBorder('='));
-console.log('arguments:');
 console.log(terminalBorder('-'));
 
 process.argv.forEach((arg, argIndex) => {
     if (argIndex <= 1) return;
-    console.log('arg:', argIndex, arg);
     const fnName = arg.replaceAll('-', '');
     try {
         exports[fnName].call(this, []);

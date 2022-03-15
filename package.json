@@ -1,11 +1,17 @@
 {
   "name": "trz-test",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nothingness",
   "bin": "./bin/cli.js",
+  "main": "./src/index.js",
   "homepage": "https://www.npmjs.com/package/trz-test",
+  "repository": "https://github.com/trozdol/trz-test.git",
   "scripts": {
-    "test": "npx . --help"
+    "test": "npm run test-bin && npm run test-src",
+    "test-bin": "npx . --help",
+    "test-src": "test ./test/index.js",
+    "start": "node ./src/index.js",
+    "develop": "nodemon ./src/index.js"
   },
   "author": "@trozlabs",
   "license": "ISC"
