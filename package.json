@@ -1,0 +1,12 @@
+{
+  "name": "trz-test",
+  "version": "1.0.2",
+  "description": "Nothingness",
+  "bin": "./bin/cli.js",
+  "homepage": "https://www.npmjs.com/package/trz-test",
+  "scripts": {
+    "test": "npx . --help"
+  },
+  "author": "@trozlabs",
+  "license": "ISC"
+}
